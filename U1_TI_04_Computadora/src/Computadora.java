@@ -4,11 +4,17 @@ public class Computadora {
     private boolean status = true;
 
     public void turnOn(){
-
+        if (status==false){
+            status=true;
+        }
+        System.out.println("Turned On");
     }
 
     public void turnOff(){
-
+        if (status==true){
+            status=false;
+        }
+        System.out.println("Turned Off");
     }
 //GETTERS
     public String getBrand() {
