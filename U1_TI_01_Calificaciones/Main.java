@@ -1,4 +1,4 @@
-package U1_T1_01_Calificaciones;
+package U1_TI_01_Calificaciones;
 
 public class Main {
     public static void main(String[] args) {
