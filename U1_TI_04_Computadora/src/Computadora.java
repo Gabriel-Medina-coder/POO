@@ -1,5 +1,5 @@
 public class Computadora {
-    private String brand;
+    private String brand = "Dell";
     private String model;
     private boolean status = true;
 
