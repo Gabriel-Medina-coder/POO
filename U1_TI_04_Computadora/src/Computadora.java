@@ -6,19 +6,15 @@ public class Computadora {
     private boolean status = false;
 
     public void turnOn(){
-        if (status==false){
+        if (!status){
             status=true;
             System.out.println("Turning On...");
         }
-        else {
-            if (status==true){
-                System.out.println("Turned on");
-            }
-        }
+
     }
 
     public void turnOff(){
-        if (status==true){
+        if (status){
             status=false;
         }
         System.out.println("Turning Off...");
