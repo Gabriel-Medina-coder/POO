@@ -1,20 +1,27 @@
+import javax.swing.plaf.IconUIResource;
+
 public class Computadora {
     private String brand = "Dell";
     private String model;
-    private boolean status = true;
+    private boolean status = false;
 
     public void turnOn(){
         if (status==false){
             status=true;
+            System.out.println("Turning On...");
         }
-        System.out.println("Turned On");
+        else {
+            if (status==true){
+                System.out.println("Turned on");
+            }
+        }
     }
 
     public void turnOff(){
         if (status==true){
             status=false;
         }
-        System.out.println("Turned Off");
+        System.out.println("Turning Off...");
     }
 //GETTERS
     public String getBrand() {
