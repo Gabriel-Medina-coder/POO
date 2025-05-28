@@ -1,6 +1,6 @@
-public package U1_T1_01_Calificaciones;
+package U1_T1_01_Calificaciones;
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         
     }
