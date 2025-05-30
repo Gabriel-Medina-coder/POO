@@ -33,15 +33,17 @@ public class Persona {
         return imc;
     }
     public String clasificateIMC(){
+        String message = "";
         if (calculateIMC() < 18.5){
-            System.out.println("El peso es bajo");
+            message += "Bajo Peso";
         }else if ((calculateIMC() >= 18.5 && calculateIMC() < 25)){
-            System.out.println("El peso es normal");
+            message += "Peso Normal";
         }else if ((calculateIMC() >= 25 && calculateIMC() < 30)){
-            System.out.println("El peso indica sobrepeso");
+            message += "Sobre Peso";
         }else if ((calculateIMC() >= 30)){
-            System.out.println("El peso indica Obesidad");
+            message += "Obesidad";
         }
+    return message;
     }
 
 }
