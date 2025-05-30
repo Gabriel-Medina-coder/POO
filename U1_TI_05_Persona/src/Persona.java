@@ -27,4 +27,11 @@ public class Persona {
     }
 
     //Calcular
+    public double calcularIMC(){
+
+    }
+    public String clasificarIMC(){
+
+    }
+    
 }
