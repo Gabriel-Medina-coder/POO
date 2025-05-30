@@ -29,7 +29,7 @@ public class Persona {
     //Calcular
     public double calculateIMC(){
         double imc = 0;
-            imc = (height * height) / weight;
+            imc = weight / (height * height);
         return imc;
     }
     public String clasificateIMC(){

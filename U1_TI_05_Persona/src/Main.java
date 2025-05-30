@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -20,7 +21,8 @@ public class Main {
         persona.setWeight(peso);
 
         System.out.println("Nombre: " + persona.getName());
-        System.out.println("IMC: " + persona.calculateIMC());
+        DecimalFormat df = new DecimalFormat("#.00");
+        System.out.println("IMC: " + df.format(persona.calculateIMC()));
         System.out.println("Status: " + persona.clasificateIMC());
     }
 }
