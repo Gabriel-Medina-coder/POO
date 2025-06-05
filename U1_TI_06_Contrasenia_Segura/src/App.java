@@ -1,9 +1,19 @@
 import javax.swing.*;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-    User usuario = new User();
-    usuario.setUserName(JOptionPane.showInputDialog("Introduzca el nombre del usuario:"));
-    usuario.setPassword(JOptionPane.showInputDialog("Ingresa tu contraseña"));
+        Scanner sc = new Scanner(System.in);
+        User usuario = new User();
+
+        String userName;
+
+        do{
+            System.out.println("Ingrese su usuario");
+            userName= sc.nextLine();
+            usuario.setUserName(userName);
+        }while (userName==null || userName=="");
+
+        
     }
 }
