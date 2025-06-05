@@ -7,6 +7,7 @@ public class App {
         User usuario = new User();
 
         String userName;
+        String password;
 
         do{
             System.out.println("Ingrese su usuario");
@@ -14,6 +15,8 @@ public class App {
             usuario.setUserName(userName);
         }while (userName==null || userName=="");
 
-        
+        System.out.println("Ingrese su contraseña");
+        password= sc.nextLine();
+        usuario.setPassword(password);
     }
 }
