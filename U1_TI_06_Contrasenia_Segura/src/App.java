@@ -15,8 +15,17 @@ public class App {
             usuario.setUserName(userName);
         }while (userName==null || userName=="");
 
+
         System.out.println("Ingrese su contraseña");
         password= sc.nextLine();
         usuario.setPassword(password);
+
+        
+
+        if (usuario.authenticatePassword(password) == true) {
+            System.out.println("Usuario Logueado correctamente");
+        }else {
+            System.out.println("Usuario Incorrecto");
+        }
     }
 }
