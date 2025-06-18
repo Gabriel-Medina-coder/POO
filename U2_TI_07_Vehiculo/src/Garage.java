@@ -6,14 +6,15 @@ public class Garage{
 
     public Garage(int numEspacios) {
         espacios=new Vehiculo[numEspacios];
+        this.numEspacios=numEspacios;
     }
 
 
 
-    public boolean estacionar(Vehiculo v){
+    public boolean estacionar(Vehiculo vehiculo){
         for (int i = 0; i < numEspacios; i++) {
             if(espacios[i] == null){
-                espacios[i]=v;
+                espacios[i]=vehiculo;
                 return true;
             }
         }
