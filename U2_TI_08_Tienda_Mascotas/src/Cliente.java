@@ -1,7 +1,8 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente {
     private String nombre;
 
-    List<Animal> mascotas;
+    List<Animal> mascotas = new ArrayList<Animal>();
 }
