@@ -26,4 +26,17 @@ public class Producto {
             System.out.println("Debe existir minimo 1 producto");
         }
     }
+
+
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getCantidad() {
+        return cantidad;
+    }
 }
