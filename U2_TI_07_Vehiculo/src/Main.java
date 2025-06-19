@@ -3,10 +3,10 @@ public class Main {
         Garage garage = new Garage(4);
 
         Coche auto =new Coche("MSA32","Porsche",2);
-        Motocicleta motocicleta = new Motocicleta("JGB46","HONDA",false);
-        Coche auto1 = new Coche("SOJ92","NISSAN",4);
-        Coche auto2 = new Coche("SVO76","FERRARI",2);
-        Coche auto3 = new Coche("SOJ93","NISSAN",4);
+        Motocicleta motocicleta = new Motocicleta("JGB46","Yamaha",false);
+        Coche auto1 = new Coche("SOJ92","Subaru",4);
+        Coche auto2 = new Coche("SVO76","Mitsubishi",2);
+        Coche auto3 = new Coche("SOJ93","Camaro",4);
 
         System.out.println("Estacionado: " + garage.estacionar(auto));
         System.out.println("Estacionado: " + garage.estacionar(auto1));
