@@ -1,2 +1,2 @@
-public class Animal cd U2{
+public abstract class Animal{
 }
