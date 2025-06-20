@@ -34,11 +34,11 @@ public class Inventario {
         return null;
     }
 
-    public int totalIntems(){
+    public int totalIntems(){ //CAMBIAR LA CONTAR
         int total=0;
         for(int i=0;i<stock.length;i++){
             if(stock[i]!=null){
-                total++;
+                total=total+stock[i].getCantidad();
             }
         }
         return total;

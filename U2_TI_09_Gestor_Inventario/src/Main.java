@@ -35,7 +35,7 @@ public class Main {
         System.out.println();
         //Buscar Productos
         System.out.println("===========BUSCAR=============");
-        System.out.println("Producto: " + inventario.buscar("2so"));
+        System.out.println("Producto: " + inventario.buscar("2so").getNombre());
         System.out.println("Producto: " + inventario.buscar("5fa"));
 
         System.out.println();
