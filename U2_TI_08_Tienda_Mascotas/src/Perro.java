@@ -4,6 +4,7 @@ public class Perro extends Animal {
         super(nombre,edad);
     }
     public void ladrar(){
+        System.out.println(getNombre() + " Ladró");
     }
 
 }
