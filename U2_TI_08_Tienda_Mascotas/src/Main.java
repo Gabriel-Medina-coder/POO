@@ -8,10 +8,21 @@ public class Main {
 
         Tienda tienda = new Tienda();
 
+        System.out.println("================Agregar al inventario=====================");
         tienda.reabastecer(perro1);
-        System.out.println(tienda.inventario.getFirst().getNombre());
-        System.out.println("Vendido: " + tienda.VenderAnimal(cliente1,perro1));
+        tienda.reabastecer(gato1);
 
+        System.out.println("================Inventario Disponible=====================");
+        System.out.println(tienda.inventario);
 
+        System.out.println("================Venta=====================");
+        System.out.println("Vendido: " + tienda.venderAnimal(cliente1,perro1));
+
+        System.out.println("Vendido: " + tienda.venderAnimal(cliente2,perro1));
+
+        System.out.println("Vendido: " + tienda.venderAnimal(cliente1,perro1));
+        
+        System.out.println("================Inventario Disponible=====================");
+        System.out.println(tienda.inventario);
     }
 }

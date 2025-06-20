@@ -4,12 +4,14 @@ import java.util.List;
 public class Tienda {
     List<Animal> inventario= new ArrayList<Animal>();
 
-    public boolean VenderAnimal(Cliente c, Animal a){
+    public boolean venderAnimal(Cliente c, Animal a){
         if (inventario.contains(a)){
             c.mascotas.add(a);
             inventario.remove(a);
             return true;
-        } else
+        } else if (c.mascotas.contains(a)) {
+            System.out.println("Mascota en tu colección");
+        }else
             System.out.println("Mascota no disponible");
         return false;
     }
